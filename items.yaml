@@ -1,0 +1,8 @@
+removeStrategy:
+  rbac: SYNC
+  items: NONE
+items:
+  - kind: folder
+    displayName: Test Folder by LVR
+    name: test-folder
+    description: ''
