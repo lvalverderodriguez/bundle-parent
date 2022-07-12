@@ -1,0 +1,3 @@
+jenkins:
+  systemMessage: "parent message"
+  numExecutors: 1
