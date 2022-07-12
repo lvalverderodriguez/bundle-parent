@@ -1,0 +1,8 @@
+id: "bundle-parent-lvr"
+version: "1"
+apiVersion: "1"
+description: "My CloudBees Configuration as Code (CasC) bundle"
+jcasc:
+  - "jenkins.yaml"
+items:
+  - "items.yaml"
