@@ -1,3 +1,43 @@
 jenkins:
   systemMessage: "parent message"
   numExecutors: 1
+
+kube:
+  podTemplatesConfiguration:
+    templates:
+    - containers:
+      - args: "9999999"
+        command: "sleep"
+        image: "debian"
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        name: "debian"
+        workingDir: "/home/jenkins/agent"
+      id: "ca4e663a-fc04-4d4c-9ff0-b5a80e7a6f14"
+      instanceCap: 1
+      instanceCapStr: "1"
+      label: "test-label"
+      name: "test-name"
+      yamlMergeStrategy: "override"
+    - containers:
+      - args: "9999999"
+        command: "sleep"
+        image: "debian"
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        name: "debian"
+        workingDir: "/home/jenkins/agent"
+      id: "ca4e663a-fc04-4d4c-9ff0-b5a80e7a6f14"
+      instanceCap: 2
+      instanceCapStr: "2"
+      label: "test-label-2"
+      name: "test-name-2"
+      yamlMergeStrategy: "override"
