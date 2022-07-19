@@ -3,10 +3,10 @@ removeStrategy:
   items: NONE
 items:
   - kind: folder
-    displayName: test-folder-${MY_VAR}
-    name: test-folder-${MY_VAR}
+    displayName: ${MY_VAR}
+    name: ${MY_VAR}
     description: ''
   - kind: folder
-    displayName: test-folder-${MY_OTHER_VAR:-ok}
-    name: test-folder-${MY_OTHER_VAR:-ok}
+    displayName: ${MY_OTHER_VAR:-ok}
+    name: ${MY_OTHER_VAR:-ok}
     description: ''
